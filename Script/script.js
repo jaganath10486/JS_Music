@@ -88,7 +88,7 @@ function prevSong()
     {
         rear = currentIndex + 1;
     }
-
+    IntialProgressbar();
     loadSong(songs[currentIndex]);
     speedRate.innerHTML = `1X`;
     playsong();
@@ -105,7 +105,7 @@ function prevSong()
 function NextSong()
 {
     currentIndex++;
-
+    IntialProgressbar();
     if(currentIndex > songs.length - 1)
     {
         currentIndex = 0;
