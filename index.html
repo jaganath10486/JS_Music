@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Style/style.css">
+    <script src="https://kit.fontawesome.com/60d33e4d8c.js" crossorigin="anonymous"></script>
+    <title>Audio</title>
+</head>
+<body>
+    <div class="container">
+        <div class="queue">
+            
+        </div>
+        <div class="music-container">
+            <div class="music-info">
+                <div class="img">
+                    <img src="/Src/Freinds.jpg" id="xyz" alt="image">
+                </div>
+                <audio src="/Src/Friends.mp3" id="audio">
+                </audio>
+                <div class="progressbar-container">
+                    <div class="progressbar">
+                    </div>
+                </div>
+            </div>
+            <div class="second">
+                <div class="navigation">
+                    <button id="prev" class="btn"><i class="fa-solid fa-backward"></i></button>
+                    <button id="play" class="btn"><i class="fa-solid fa-play"></i></button>
+                    <button id="next" class="btn"><i class="fa-solid fa-forward"></i></button>
+                </div>
+                <div class="set">
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+                <div class="settings">
+                    <label for="Sound" id="sound">Sound</label>
+                    <input type="range" id="input">
+                    <br>
+                    <label for="playback" id="playback">Speed</label>
+                    <span id="rate">1X</span>
+                    <div class="options">
+                        <p id="0.5" data-value="0.5" class="option">0.5X</p>
+                        <p id="0.75" data-value="0.75" class="option">0.75X</p>
+                        <p id="1" data-value="1" class="option">1X</p>
+                        <p id="1.5" data-value="1.5" class="option">1.5X</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/Script/script.js">
+
+    </script>
+</body>
+</html>
